@@ -141,7 +141,7 @@ class Fraction {
     f3.changeNumerator(7);
     System.out.println("Now f3 is " + f3 + ", which should be 7/20");
     System.out.println("The total number of Fraction objects is " +
-                       Fraction.fracs());//f3-->Fraction, add a static on method fracs()
+                       Fraction.fracs());//因为f3与fracs()无关，直接f3.fracs()bad style, 所以加一个static来修饰方法fracs. 调用Fraction.fracs()
 
     /* Test gcd function (static method). */
     System.out.println("\nTesting gcd:");

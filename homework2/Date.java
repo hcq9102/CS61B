@@ -101,25 +101,7 @@ class Date {
 	  if(year==0) return false;
 	  if(day<1 || day >daysInMonth(month,year)) return false;
 	  if(month==2 && day==29 && !isLeapYear(year)) return false;
-	  return true;
-	  /*if(month >=1 && month<=12){
-		switch(month){
-			case 2:
-			if(isLeapYear(year)==true){
-				return day ==29;
-			}else{
-				return day==28;
-			}
-			case 4:
-			case 6:
-			case 9:
-			case 11:
-				return day ==30;
-			default:
-				return day ==31;			
-		}
-	  }
-	  */                     
+	  return true;                   
   }
 
   /** Returns a string representation of this date in the form month/day/year.
